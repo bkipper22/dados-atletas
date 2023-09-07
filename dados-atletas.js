@@ -28,8 +28,8 @@ class Atleta {
 
   calculaMediaValida() {
     const notasOrdenadas = this.notas.slice().sort((a, b) => a - b);
-    notasOrdenadas.pop(); // Remove a maior nota
-    notasOrdenadas.shift(); // Remove a menor nota
+    notasOrdenadas.pop(); // 
+    notasOrdenadas.shift(); // 
     const somaNotas = notasOrdenadas.reduce((total, nota) => total + nota, 0);
     const media = somaNotas / notasOrdenadas.length;
     return media;
